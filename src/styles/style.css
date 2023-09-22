@@ -52,11 +52,35 @@
     background-color: var(--accent-color);
     margin-top: 20px;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
     font-size: 2rem;
     color: var(--text-color);
+}
+
+.notes {
+    width: 63vw;
+    height: 87vh;
+    position: absolute;
+    left: 36vw;
+    top: 12vh;
+    background-color: var(--background);
+    color: var(--text-color);
+    border: none;
+    resize: none;
+}
+
+.notes:focus {
+    outline: none;
+}
+
+.note-title {
+    color: var(--text-color);
+    font-size: 1.2rem;
 }
 
 .left {
