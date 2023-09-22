@@ -1,9 +1,9 @@
-function component() {
-    const element = document.createElement('div');
+// function component() {
+//     const element = document.createElement('div');
  
-    element.innerHTML = "working???";
+//     element.innerHTML = "working???";
  
-    return element;
-  }
+//     return element;
+//   }
  
-  document.body.appendChild(component());
+//   document.body.appendChild(component());
