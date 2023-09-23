@@ -124,7 +124,7 @@ input:focus::placeholder {
 }
 
 .hidden {
-    display: hidden;
+    display: none;
 }
 
 .border {

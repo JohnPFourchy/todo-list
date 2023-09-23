@@ -5,18 +5,29 @@ function addNote(note) {
     lst.appendChild(note);
 }
 
+function hideNote(note) {
+    const t = note.querySelector(".notes");
+    t.classList.add("hidden");
+}
+
 function selectNote(note) {
 
+    // Future Reference: QuerySelectorAll ONLY get descendants of the node!
+    const notes = document.getElementsByClassName("list-item");
+    const t = note.querySelector(".notes");
+
     note.addEventListener("click", () => {
-        const t = note.querySelector(".notes");
+        console.log(notes.length);
+        for(let i = 0; i < notes.length; i++) {
+            const n = notes[i].querySelector(".notes");
+            n.classList.add("hidden");
+            notes[i].classList.remove("add-border");
+            console.log(notes[i]);
+        }
+
         t.classList.remove("hidden");
         note.classList.add("add-border");
     });
-
-    // note.addEventListener("blur", () => {
-    //     console.log("here");
-    //     note.classList.remove("add-border");
-    // })
 }
 
-export {addNote, selectNote};
+export {addNote, selectNote, hideNote};
