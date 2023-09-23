@@ -1,9 +1,10 @@
-// function component() {
-//     const element = document.createElement('div');
- 
-//     element.innerHTML = "working???";
- 
-//     return element;
-//   }
- 
-//   document.body.appendChild(component());
+import {createNote} from "./components.js";
+import {addNote, selectNote} from "./dom.js";
+
+// main application logic
+const addBtn = document.querySelector(".add-note");
+addBtn.addEventListener("click", () => {
+    const note = createNote("apple");
+    selectNote(note);
+    addNote(note);
+});

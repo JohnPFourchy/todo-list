@@ -2,22 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>TODO List</title>
+    <title>Notes</title>
     <link rel="stylesheet" href="../src/styles/style.css">
   </head>
   <body>
-   <script src="main.js"></script>
+   <script src="main.js" defer></script>
 
     <section class="header border">
-        <p class="title left">TODO APPLICATION</p>
+        <p class="title left">Notes Application</p>
+        <button type="button" class="add-note">New Note</button>
     </section>
 
     <div class="flex-wrapper">
         <section class="list border">
-            <ul class="todo-list border">
+            <ul id="lst" class="todo-list border">
                 <!-- testing for css will be added with javascript -->
                 <li class="list-item">
-                    <p class="note-title">Grocery List</p>
+                    <input class="note-title" placeholder="enter title here"></input>
                     <textarea class="notes" placeholder="Write whatever you want here ..."></textarea>
                 </li>
             </ul>
