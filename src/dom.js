@@ -17,12 +17,10 @@ function selectNote(note) {
     const t = note.querySelector(".notes");
 
     note.addEventListener("click", () => {
-        console.log(notes.length);
         for(let i = 0; i < notes.length; i++) {
             const n = notes[i].querySelector(".notes");
             n.classList.add("hidden");
             notes[i].classList.remove("add-border");
-            console.log(notes[i]);
         }
 
         t.classList.remove("hidden");

@@ -1,5 +1,5 @@
 import {createNote} from "./components.js";
-import {addNote, selectNote, hideNote} from "./dom.js";
+import {addNote, selectNote, hideNote, addLocalStorageNotes} from "./dom.js";
 
 // main application logic
 const addBtn = document.querySelector(".add-note");
